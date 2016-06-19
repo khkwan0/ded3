@@ -1,0 +1,713 @@
+
+Fri, 15 Jan 2016 08:17:29 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:17:29 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:17:29 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:17:29 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[YOU_API_LOGIN_ID]]></name>
+    <transactionKey><![CDATA[YOUR_TRANSACTION_KEY]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452845849]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:17:29 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:17:29 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><ErrorResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00003</code><text>The 'AnetApi/xml/v1/schema/AnetApiSchema.xsd:transactionKey' element is invalid - The value 'YOUR_TRANSACTION_KEY' is invalid according to its datatype 'String' - The actual length is greater than the MaxLength value.</text></message></messages></ErrorResponse>
+
+Fri, 15 Jan 2016 08:17:29 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:17:29 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:19:24 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:19:24 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:19:24 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:19:24 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452845964]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:19:24 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:19:25 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452845964</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:19:25 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:19:25 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:20:42 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:20:42 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:20:42 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:20:42 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846042]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:20:42 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:20:49 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846042</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:20:49 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:20:49 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:24:14 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:24:14 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:24:14 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:24:14 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846254]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:24:14 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:24:14 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846254</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:24:14 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:24:14 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:31:26 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:31:26 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:31:26 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:31:26 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[556KThWQ6vf2]]></name>
+    <transactionKey><![CDATA[9ac2932kQ7kN2Wzq]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846686]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:31:26 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:31:27 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846686</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><transactionResponse><responseCode>1</responseCode><authCode>33DKYV</authCode><avsResultCode>Y</avsResultCode><cvvResultCode /><cavvResultCode>2</cavvResultCode><transId>2248925366</transId><refTransID /><transHash>5BD85524ED24A4C0B80208F693C97A04</transHash><testRequest>0</testRequest><accountNumber>XXXX1111</accountNumber><accountType>Visa</accountType><messages><message><code>1</code><description>This transaction has been approved.</description></message></messages></transactionResponse></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:31:27 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:31:27 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:32:36 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:32:36 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:32:36 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:32:36 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846756]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:32:36 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:32:37 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846756</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:32:37 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:32:37 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:33:44 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:33:44 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:33:44 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:33:44 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846824]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:33:44 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:33:45 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846824</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:33:45 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:33:45 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:33:47 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:33:47 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:33:47 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:33:47 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846827]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:33:47 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:33:47 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846827</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:33:47 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:33:47 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:34:15 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:34:15 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:34:15 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:34:15 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846855]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:34:15 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:34:15 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846855</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:34:15 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:34:15 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:34:17 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:34:17 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:34:17 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:34:17 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452846857]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:34:17 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:34:17 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452846857</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:34:17 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:34:17 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:39:41 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:39:41 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:39:41 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:39:41 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[497kNZ74q4kaMN5L]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452847181]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:39:41 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:39:42 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452847181</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:39:42 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:39:42 +0000: Response De-Serialization End
+Fri, 15 Jan 2016 08:41:06 +0000: Request Serialization Begin
+Fri, 15 Jan 2016 08:41:06 +0000: Request  Serialization End
+Fri, 15 Jan 2016 08:41:06 +0000: Url: https://apitest.authorize.net/xml/v1/request.api
+Fri, 15 Jan 2016 08:41:06 +0000:Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[46uGU25Phsj]]></name>
+    <transactionKey><![CDATA[3Qawmg927Jj384VG]]></transactionKey>
+  </merchantAuthentication>
+  <refId><![CDATA[ref1452847266]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authCaptureTransaction]]></transactionType>
+    <amount>151.51</amount>
+    <payment>
+      <creditCard>
+        <cardNumber><![CDATA[4111111111111111]]></cardNumber>
+        <expirationDate><![CDATA[2038-12]]></expirationDate>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[101]]></invoiceNumber>
+      <description><![CDATA[Golf Shirts]]></description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId><![CDATA[Shirts]]></itemId>
+        <name><![CDATA[item1]]></name>
+        <description><![CDATA[golf shirt]]></description>
+        <quantity>1</quantity>
+        <unitPrice>20.95</unitPrice>
+        <taxable>false</taxable>
+      </lineItem>
+    </lineItems>
+    <tax>
+      <amount>4.5</amount>
+      <name><![CDATA[level 2 tax name]]></name>
+      <description><![CDATA[level 2 tax]]></description>
+    </tax>
+    <poNumber><![CDATA[15]]></poNumber>
+    <customer>
+      <id><![CDATA[15]]></id>
+      <email><![CDATA[foo@example.com]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Ellen]]></firstName>
+      <lastName><![CDATA[Johnson]]></lastName>
+      <company><![CDATA[Souveniropolis]]></company>
+      <address><![CDATA[14 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </billTo>
+    <shipTo>
+      <firstName><![CDATA[Bayles]]></firstName>
+      <lastName><![CDATA[China]]></lastName>
+      <company><![CDATA[Thyme for Tea]]></company>
+      <address><![CDATA[12 Main Street]]></address>
+      <city><![CDATA[Pecan Springs]]></city>
+      <state><![CDATA[TX]]></state>
+      <zip><![CDATA[44628]]></zip>
+      <country><![CDATA[USA]]></country>
+    </shipTo>
+  </transactionRequest>
+</createTransactionRequest>
+
+Sending 'XML' Request type
+Fri, 15 Jan 2016 08:41:06 +0000:Sending http request via Curl
+Fri, 15 Jan 2016 08:41:06 +0000:Response from AnetApi: 
+﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1452847266</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages><transactionResponse /></createTransactionResponse>
+
+Fri, 15 Jan 2016 08:41:06 +0000: Response De-Serialization Begin
+Fri, 15 Jan 2016 08:41:06 +0000: Response De-Serialization End
