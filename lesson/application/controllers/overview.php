@@ -13,10 +13,12 @@ Class Overview extends CI_Controller {
         $user_id = $this->session->userdata('user_id');
         if ($user_id) {
             $css = array('lesson.css');
+            $progress = $this->usersmodel->getProgress($user_id);
+            $meta = $this->issuesmodel->getMetaFromIssueID($progress);
             $random_background = $this->getRandomBackground();
             $this->load->view('html_header', array('css'=>$css, 'background'=>$random_background));
             $units = $this->issuesmodel->getUnits();
-            $this->load->view('overview', array('units'=>$units));
+            $this->load->view('overview', array('units'=>$units, 'meta'=>$meta));
             $this->load->view('html_footer');
         } else {
             redirect('/', 302);

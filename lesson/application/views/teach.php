@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <h2>Welcome <?php echo $email?></h2>
+            <h2 style="color:#dddddd">Welcome <?php echo $email?></h2>
             <h3><a style="text-decoration:none;border-radius:25px;background-color:#F6C08A;padding-left:10px;padding-right:10px;" href="/lesson/status">Exit</a></h3>
         </div>
         <div class="col-sm-4"></div>

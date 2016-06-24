@@ -98,7 +98,7 @@ class IssuesModel extends CI_Model {
         $query = $this->db->get();
         if ($query && $query->result()) {
             foreach ($query->result() as $row) {
-                $rv[$row->unit] = $row->lesson;
+                $rv[$row->unit] = $row;
             }
         }
         return $rv;
