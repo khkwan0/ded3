@@ -87,7 +87,7 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-        <div id="next_go" style="display:none;font-size:2em;color:#00ff00">
+        <div id="next_go" style="visibility:hidden;font-size:2em;color:#00ff00">
             <div>
                 <?php if ($is_final):?>
                     Congratulations!  You passed the final!
@@ -154,7 +154,7 @@
                                 window.location = '/lesson/congrats';
                             } else {
                                 $('#wrong').hide();
-                                $('#next_go').show();
+                                $('#next_go').css('visibility','visible');
                             }
                         }
                     },'json'
