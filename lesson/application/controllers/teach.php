@@ -25,23 +25,31 @@ class Teach extends CI_Controller {
             }
             $prev_id = $this->issuesmodel->getPrevious($issue_id);
             $issues = $this->issuesmodel->getSlides($issue_id);
+            $prev_unit = $this->issuesmodel->getUnitByIssueID($prev_id);
             if (!isset($issues[1]->id)) {  // there is no next unit, no more lessons...time for final test
                 $this->usersmodel->updateQuizProgress($user_id, 69);  // 69 is the magic number to denote the final exam
                 $at_end = true;
             } else if ($issues[1]->id > $progress) {
                 $this->usersmodel->updateProgress($user_id, $issues[1]->id);
             }
+            
+            $is_quiz = 0;
             if (isset($issues[1]) && $issues[1]->unit != $issues[0]->unit) {
                 $this->usersmodel->updateQuizProgress($user_id, $issues[0]->unit);
-                redirect('/test/quiz/'.$issues[0]->unit, 302);
+                $is_quiz = $issues[0]->unit;
             }
+            /*
+            if ($issue_id>1 && isset($prev_unit) && $prev_unit->unit != $issues[0]->unit) {
+                redirect('/test/quiz/'.$prev_unit->unit, 302);
+            }
+            */
             $css = array('welcome.css');
             $random_background = $this->getRandomBackground();
             $user_info = $this->usersmodel->getUserInfo($user_id);
             $email = $user_info['email'];
 
             $this->load->view('html_header', array('css'=>$css, 'background'=>$random_background));
-            $this->load->view('teach', array('user_id'=>$user_id, 'issues'=>$issues, 'prev_id'=>$prev_id, 'at_end'=>$at_end, 'email'=>$email));
+            $this->load->view('teach', array('user_id'=>$user_id, 'issues'=>$issues, 'prev_id'=>$prev_id, 'at_end'=>$at_end, 'email'=>$email,'next_quiz'=>$is_quiz));
             $this->load->view('html_footer');
         } else if ($issue_id == 'dmvdisclaimer' && $user_id) {
             $css = array('welcome.css');

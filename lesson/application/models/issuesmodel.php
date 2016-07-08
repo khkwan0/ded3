@@ -103,4 +103,50 @@ class IssuesModel extends CI_Model {
         }
         return $rv;
     }
+
+    public function getUnitByIssueID($issue_id) {
+        $rv = array();
+        $this->db->from('issues');
+        $this->db->where('id', $issue_id);
+        $query = $this->db->get();
+        if ($query && $query->result()) {
+            foreach ($query->result() as $row) {
+                $rv = $row;
+            }
+        }
+        return $rv;
+    }
+
+    public function getLastIssueByUnit($unit = 0) {
+        $rv = null;
+        $this->db->from('issues');
+        $this->db->where('unit', $unit);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        if ($query && $query->result()) {
+            foreach ($query->result() as $row) {
+                $rv = $row;
+            }
+        }
+        return $rv;
+    }
+
+    public function getNextIssueByUnit($unit = 0) {
+        $rv = null;
+        $unit++;
+        if ($unit) {
+            $this->db->from('issues');
+            $this->db->where('unit', $unit);
+            $this->db->order_by('id', 'asc');
+            $this->db->limit(1);
+            $query = $this->db->get();
+            if ($query && $query->result()) {
+                foreach ($query->result() as $row) {
+                    $rv = $row;
+                }
+            }
+        }
+        return $rv;
+    }
 }

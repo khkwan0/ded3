@@ -4,6 +4,7 @@ class Test extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model('questionsmodel');
+        $this->load->model('issuesmodel');
         $this->load->helper('url');
     }
 
@@ -35,13 +36,25 @@ class Test extends CI_Controller {
                         }
                     }
                     $is_final = ($unit == 69)?1:0;
-                    $this->load->view('html_header');
-                    $this->load->view('quiz', array('questions'=>$questions, 'unit'=>$unit, 'is_final'=>$is_final));
+                    $css = array('welcome.css');
+                    $random_background = $this->getRandomBackground();
+                    $issue = $this->issuesmodel->getLastIssueByUnit($unit);
+                    $next = $this->issuesmodel->getNextIssueByUnit($unit);
+                    $user_info = $this->usersmodel->getUserInfo($user_id);
+                    $email = $user_info['email'];
+                    $this->load->view('html_header', array('css'=>$css, 'background'=>$random_background));
+                    $this->load->view('quiz', array('questions'=>$questions, 'next'=>$next, 'issue'=>$issue, 'unit'=>$unit, 'is_final'=>$is_final,'email'=>$email));
                     $this->load->view('html_footer');
                 }
             }
         } else {
             redirect('/', 302);
         }
+    }
+
+    private function getRandomBackground() {
+        $dir = '/home/ken/public_html/ded/lesson/assets/img/lesson';
+        $files = scandir($dir,1);
+        return $files[rand(1, count($files)-2)];
     }
 }

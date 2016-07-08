@@ -78,7 +78,11 @@
             <?php if ($at_end):?>
                 <span id="next"><a href="/lesson/test/quiz/69">Take the final</a></span>
             <?php else:?>
-                <span id="next"><a style="text-decoration:none;border-radius:25px;background-color:rgba(0,0,0,0.5);padding-left:10px; padding-right:10px;font-size:4em; color:#b09256;" href="/lesson/teach/unit/<?php echo $issues[1]->id?>">Next</a></span>
+                <?php if ($next_quiz>0):?>
+                    <span id="next"><a style="text-decoration:none;border-radius:25px;background-color:rgba(0,0,0,0.5);padding-left:10px; padding-right:10px;font-size:4em; color:#b09256;" href="/lesson/test/quiz/<?php echo $next_quiz?>">Next</a></span>
+                <?php else:?>
+                    <span id="next"><a style="text-decoration:none;border-radius:25px;background-color:rgba(0,0,0,0.5);padding-left:10px; padding-right:10px;font-size:4em; color:#b09256;" href="/lesson/teach/unit/<?php echo $issues[1]->id?>">Next</a></span>
+                <?php endif;?>
             <?php endif;?>
         </div>
     </div>
