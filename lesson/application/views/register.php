@@ -40,6 +40,7 @@
         <div class="col-sm-4"></div>
     </div>
 </div>
+<script src="assets/js/jquery.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#do_register').click(function(data) {
