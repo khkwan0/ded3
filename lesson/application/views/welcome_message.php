@@ -630,10 +630,10 @@ svg {
             </div>
         </div>
         <div class="col-md-4">
-            <div style="text-align:center;background-color:rgba(0,0,0,0.5);border-radius:25px;padding:19.5% 0">
+            <div style="text-align:center;background-color:rgba(0,0,0,0.5);border-radius:25px;padding:17.0% 0">
                 <h1><a style="color:#b09256;" href="register">Create an account</a></h1>
+                <h2><a style="color:#b09256" href="recover">Forgot Password</a></h2>
             </div>
         </div>
-        <div class="col-md-2"><p>Page rendered in <strong>{elapsed_time}</strong> seconds</p></div>
     </div>
 </div>

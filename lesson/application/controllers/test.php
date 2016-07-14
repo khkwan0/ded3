@@ -38,6 +38,7 @@ class Test extends CI_Controller {
                     $is_final = ($unit == 69)?1:0;
                     $css = array('welcome.css');
                     $random_background = $this->getRandomBackground();
+                    if ($unit == 69) { $unit = 11; }
                     $issue = $this->issuesmodel->getLastIssueByUnit($unit);
                     $next = $this->issuesmodel->getNextIssueByUnit($unit);
                     $user_info = $this->usersmodel->getUserInfo($user_id);

@@ -278,4 +278,19 @@ class UsersModel extends CI_Model {
         }
         return $rv;
     }
+
+    public function getPasswordByEmail($email = '') {
+        $password = '';
+        if ($email) {
+            $this->db->where('email', $email);
+            $this->db->from('users');
+            $query = $this->db->get();
+            if ($query && $query->result()) {
+                foreach ($query->result() as $row) {
+                    $password = $row->password;
+                }
+            }
+        }
+        return $password;
+    }
 }

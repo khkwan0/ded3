@@ -45,7 +45,11 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <h2 style="color:#b09256">Quiz Unit: <?php echo $unit?></h2>
+            <?php if ($unit != 11):?>
+                <h2 style="color:#b09256">Quiz Unit: <?php echo $unit?></h2>
+            <?php else:?>
+                <h2 style="color:#b09256">Final Exam</h2>
+            <?php endif;?>
         </div>
         <div class="col-sm-4"></div>
     </div>
@@ -133,13 +137,11 @@
                 validate++;
             });
             if (<?php echo count($questions)?> == validate) {
-            console.log('Post');
                 $.post('/lesson/ajax/checkAnswers',
                     {
                         answers: answers,
                         is_final: <?php echo $is_final?>
                     }, function(data) {
-                        console.log('data: '+data);
                         $('#outer_div input').css('color','black');
                         $('.question').css('color','#00ff00');
                         for (var key in data) {
